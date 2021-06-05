@@ -10,16 +10,20 @@ PHP apifunc - php.latency.pl
 
 # example
 
+Request
+
+    localhost/index.php?domain=softreck.com
+
+index.php
+
 ```php
 apifunc([
     'https://php.defjson.com/def_json.php',
     'https://php.latency.pl/ping.php'
 ], function () {
-    global $domain;
-    $ping =  ping($domain, 80, 10);
     echo def_json("", [
-        "ping" => $ping,
-        "domain" => $domain
+        "ping" => ping($_GET['domain'], 80, 10),
+        "domain" => $_GET['domain']
     ]);
 });
 ```
