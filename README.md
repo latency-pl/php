@@ -31,7 +31,7 @@ apifunc([
 Response
 ```json
 {
-    "message":	"The Url: https://php.latency.pl/ping.php not exist ",
+    "message":	"5 ms",
     "domain":	"softreck.com"
 }    
 ```
