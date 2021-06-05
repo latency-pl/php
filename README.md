@@ -28,6 +28,14 @@ apifunc([
 });
 ```
 
+Response
+```json
+{
+    "message":	"The Url: https://php.latency.pl/ping.php not exist ",
+    "domain":	"softreck.com"
+}    
+```
+
 ---
 + [edit](https://github.com/latency-pl/php/edit/main/README.md)
 
